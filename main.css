@@ -4,7 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.2em;
     color: gray;
     text-align: center;
@@ -31,11 +31,31 @@ h2 {
 
 h3 {
     font-weight: 300;
-    margin-bottom: 3%;
+    padding-bottom: 24px;
+    color: black;
 }
 
-.lightertext {
+.white {
     color: white;
+}
+
+.lighter {
+    color: #756657;
+    font-weight: 400;
+}
+
+.black {
+    color: black;
+    text-transform: uppercase;
+}
+
+.email {
+    color: white;
+    padding-left: 6px;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .navbar {
@@ -87,7 +107,10 @@ h3 {
 
 section {
     width: 100%;
-    padding: 5%;
+    min-height: 50%;
+    padding: 16px;
+    padding-top: 66px;
+    padding-bottom: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -107,35 +130,58 @@ section {
     background-color: #ebe6e0;
 }
 
-#qualifications, #contact {
+#qualifications, #testimonials {
     background-color: #e1dad0;
 }
 
-img {
+.testimonials {
+    font-size: .9em;
+    font-style: italic;
+}
+
+#contact {
+    background-color: gray;
+    color: white;
+    font-size: .8em;
+}
+
+.col {
+    max-width: 768px;
+    margin: auto;
+}
+
+.yj {
+    padding: 8px;
+    float: none;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.vector {
     opacity: 0.3;
 }
 
 i {
-    color: #5d4f3c;
+    color: white;
 }
 
 i:hover {
-    color: #3e3428;
-    transform: scale(1.05,1.05);
+    transform: scale(1.1,1.1);
     transition: all .2s;
 }
 
 @media screen and (max-width: 767px) {
     .navbar {
         position: fixed;
+        text-align: left;
     }
     .bttm {
-        margin-bottom: 10%;
+        margin-bottom: 32px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .bttm-alt {
-        margin-bottom: 5%;
+    .bttm {
+        margin-bottom: 16px;
     }
 }
